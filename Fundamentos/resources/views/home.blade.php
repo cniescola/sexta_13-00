@@ -14,11 +14,14 @@
     }
 
     .botao{
-         box-shadow: 6px 6px 10px black
+         background-color: black;
+         height:200px;
+         width: 200px;
+         border-radius:50%;
     }
 </style>
 
-<body>
+<body class="vh-100">
 
     <header>
 
@@ -28,7 +31,7 @@
 
             <ul class="nav d-flex justify-content-center">
 
-                <li class="nav-item"> <a href="{{ route('welcome') }}" class="nav-link"> Home </a> </li>
+                <li class="nav-item"> <a href="{{ route('tela') }}" class="nav-link"> Home </a> </li>
                 <li class="nav-item"> <a href="" class="nav-link"> Contact </a> </li>
                 <li class="nav-item"> <a href="" class="nav-link"> About </a> </li>
                 <li class="nav-item"> <a href="" class="nav-link"> Services </a> </li>
@@ -41,7 +44,7 @@
 
     </header>
 
-    <main>
+    <main class="vh-75">
 
         <div class="container-fluid p-4">
 
@@ -49,8 +52,10 @@
 
                  <ul class="nav d-flex justify-content-center align-items-center flex-column">
 
-                    <li class="nav.item"> <a href="{{ route('welcome') }}"> Clique aqui</a> </li>
-                    <li class="nav.item"> <a href="#"> O botão acima o levará para a aba sobre o laravel</a> </li>
+                    <li class="nav.item botao d-flex justify-content-center align-items-center "> 
+                        <a href="{{ route('welcome') }} "class=" botao d-flex justify-content-center align-items-center text-decoration-none" style="color: white;"> Clique aqui</a>
+                    </li>
+                    <li class="nav.item"> <a href="#" class="text-decoration-none"> O botão acima o levará para a aba sobre o laravel</a> </li>
 
                 </ul>
 

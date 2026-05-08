@@ -13,3 +13,7 @@ Route::get('/home', function () {
 Route::get('/welcome', function () {
     return view('welcome');
 })->name('welcome');
+
+Route::get('/tela', function () {
+    return view('tela');
+})->name('tela');
