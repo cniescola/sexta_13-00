@@ -10,7 +10,7 @@
 
 <style>
     .card{
-        box-shadow: 6px 6px 10px black
+        box-shadow: 6px 6px 10px 00000007
     }
 
     .botao{
@@ -25,7 +25,7 @@
 
     <header>
 
-    <div class="container-fluid p-4 card">
+    <div class="container-fluid p-4 card "style="background-color:white;">
 
         <nav class="container">
 
@@ -46,22 +46,78 @@
 
     <main class="vh-75">
 
-        <div class="container-fluid p-4">
+       <section class="container-fluid">
 
-            <nav class="container">
+            <div class="container p-4">
 
-                 <ul class="nav d-flex justify-content-center align-items-center flex-column">
+                <div class="row">
+                    <div class="col-8 card p-4">
 
-                    <li class="nav.item botao d-flex justify-content-center align-items-center "> 
-                        <a href="{{ route('welcome') }} "class=" botao d-flex justify-content-center align-items-center text-decoration-none" style="color: white;"> Clique aqui</a>
-                    </li>
-                    <li class="nav.item"> <a href="#" class="text-decoration-none"> O botão acima o levará para a aba sobre o laravel</a> </li>
+                        <h3>Cadastro do Produto</h3>
 
-                </ul>
+                        <div class="row">
 
-            </nav>
+                            <div class="col">
+                                <label class="form-label">Nome do Produto</label>
+                                <input type="text" class="form-control">
+                            </div>
 
-        </div>
+                            <div class="col">
+                                <label class="form-label">Codigo do Produto</label>
+                                <input type="text" class="form-control">
+                            </div>
+    
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col">
+                                <label class="form-label">Descrição do Produto</label>
+                                <textarea class="form-control" rows="7"></textarea>
+                            </div>
+
+                            <div class="col">
+
+                                <div class="row m-0">
+                                    <label class="form-label">Preço do Produto</label>
+                                    <input type="number" class="form-control">
+                                </div>
+
+                                <div class="row m-0">
+                                    <label class="form-label">Preço da Entrega</label>
+                                    <input type="number" class="form-control">
+                                </div>
+
+                                <div class="row m-0">
+                                    <label class="form-label">Porcetagem de Desconto</label>
+                                    <input type="number" class="form-control">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="col-4 card d-flex flex-column justify-content-center p-4">
+
+                        <div class="m-4">
+                            <button class="btn btn-success w-100 p-3" style="border-radius: 50px;"> Salvar</button>
+                        </div>
+
+                        <div class="m-4">
+                            <button class="btn btn-danger w-100 p-3" style="border-radius: 50px"> Apagar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+       </section>
 
     </main>
 
