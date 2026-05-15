@@ -1,27 +1,87 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fundamentos bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    
-    <header class="container-fluid p-4 card">
-        <nav class="container">
-            <ul class="nav d-flex justify-content-center">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contats</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Services </a></li>
-            </ul>
-        </nav>
-    </header>
-    <main></main>
-    <footer></footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fundamentos bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="container-fluid p-4 card">
+    <nav class="container">
+      <ul class="nav d-flex justify-content-center">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contats</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Services </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="container-fuild">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col col-8 card p-3">
+            <h3>Cadastro de Produtos</h3>
+
+            <div class="row mb-3">
+              <div class="col">
+                <label class="form-label">Nome Do Produto</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col">
+                <label class="form-label">Codigo Do Produto</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-label">Descrição do produto</label>
+                <textarea class="form-control" rows="7"></textarea>
+              </div>
+              <div class="col">
+                <div>
+                  <label class="form-label">Preço da entrega</label>
+                  <input type="number" class="form-control">
+                </div>
+                <div>
+                  <label class="form-label">Preço do produto</label>
+                  <input type="number" class="form-control">
+                </div>
+                <div>
+                  <label class="form-label">Porcentagem de desconto</label>
+                  <input type="number" class="form-control">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-4 p-5 d-flex justify-content-around flex-column card">
+            <div class="">
+              <button class="btn btn-success w-100">Salvar</button>
+            </div>
+            <div class="">
+              <button class="btn btn-danger w-100">Apagar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
