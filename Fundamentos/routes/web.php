@@ -1,19 +1,21 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\loja;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+   // return view('index');
+//});
 
-Route::get('/home', function () {
-    return view('home');
-})->name('home');
+Route::get('/loja',[loja::class,'index'])->name('loja');
 
-Route::get('/welcome', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/index',[loja::class,'loja'])->name('index');
 
-Route::get('/tela', function () {
-    return view('tela');
-})->name('tela');
+
+
+//Route::get('/welcome', function () {
+   // return view('welcome');
+//})->name('welcome');
+
+
+
