@@ -85,15 +85,17 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+
     <script type="text/javascript">
 
-      document.querySelector('#salvarBtn').addEventListener('click',function() {
-        var nomeProduto = document.querySelector('#nomeProduto').value;
-        var codigoProduto = document.querySelector('#codigoProduto').value;
-        var descricaoProduto = document.querySelector('#descricaoProduto').value;
-        var precoEntrega = document.querySelector('#precoEntrega').value;
-        var precoProduto = document.querySelector('#precoProduto').value;
-        var porcentagemDesconto = document.querySelector('#porcentagemDesconto').value;
+      $('#salvarBtn').click(function() {
+        var nomeProduto = $('#nomeProduto').val();
+        var codigoProduto = $('#codigoProduto').val();
+        var descricaoProduto = $('#descricaoProduto').val();
+        var precoEntrega = $('#precoEntrega').val();
+        var precoProduto = $('#precoProduto').val();
+        var porcentagemDesconto = $('#porcentagemDesconto').val();
 
         alert('Produto: ' + nomeProduto + '\n' +
               'Código: ' + codigoProduto + '\n' +
@@ -102,6 +104,22 @@
               'Preço do Produto: R$ ' + precoProduto + '\n' +
               'Desconto: ' + porcentagemDesconto + '%');
       });
+
+      // document.querySelector('#salvarBtn').addEventListener('click',function() {
+      //   var nomeProduto = document.querySelector('#nomeProduto').value;
+      //   var codigoProduto = document.querySelector('#codigoProduto').value;
+      //   var descricaoProduto = document.querySelector('#descricaoProduto').value;
+      //   var precoEntrega = document.querySelector('#precoEntrega').value;
+      //   var precoProduto = document.querySelector('#precoProduto').value;
+      //   var porcentagemDesconto = document.querySelector('#porcentagemDesconto').value;
+
+      //   alert('Produto: ' + nomeProduto + '\n' +
+      //         'Código: ' + codigoProduto + '\n' +
+      //         'Descrição: ' + descricaoProduto + '\n' +
+      //         'Preço de Entrega: R$ ' + precoEntrega + '\n' +
+      //         'Preço do Produto: R$ ' + precoProduto + '\n' +
+      //         'Desconto: ' + porcentagemDesconto + '%');
+      // });
 
     </script>
 </body>
