@@ -34,41 +34,41 @@
             <div class="row mb-3">
               <div class="col">
                 <label class="form-label">Nome Do Produto</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="nomeProduto">
               </div>
               <div class="col">
                 <label class="form-label">Codigo Do Produto</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="codigoProduto">
               </div>
             </div>
 
             <div class="row">
               <div class="col">
                 <label class="form-label">Descrição do produto</label>
-                <textarea class="form-control" rows="7"></textarea>
+                <textarea class="form-control" rows="7" id="descricaoProduto"></textarea>
               </div>
               <div class="col">
                 <div>
                   <label class="form-label">Preço da entrega</label>
-                  <input type="number" class="form-control">
+                  <input type="number" class="form-control" id="precoEntrega">
                 </div>
                 <div>
                   <label class="form-label">Preço do produto</label>
-                  <input type="number" class="form-control">
+                  <input type="number" class="form-control" id="precoProduto">
                 </div>
                 <div>
                   <label class="form-label">Porcentagem de desconto</label>
-                  <input type="number" class="form-control">
+                  <input type="number" class="form-control" id="porcentagemDesconto">
                 </div>
               </div>
             </div>
           </div>
           <div class="col col-4 p-5 d-flex justify-content-around flex-column card">
             <div class="">
-              <button class="btn btn-success w-100">Salvar</button>
+              <button class="btn btn-success w-100" id="salvarBtn">Salvar</button>
             </div>
             <div class="">
-              <button class="btn btn-danger w-100">Apagar</button>
+              <button class="btn btn-danger w-100" id="apagarBtn">Apagar</button>
             </div>
           </div>
         </div>
@@ -79,9 +79,31 @@
 
   <footer></footer>
 
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+      document.querySelector('#salvarBtn').addEventListener('click',function() {
+        var nomeProduto = document.querySelector('#nomeProduto').value;
+        var codigoProduto = document.querySelector('#codigoProduto').value;
+        var descricaoProduto = document.querySelector('#descricaoProduto').value;
+        var precoEntrega = document.querySelector('#precoEntrega').value;
+        var precoProduto = document.querySelector('#precoProduto').value;
+        var porcentagemDesconto = document.querySelector('#porcentagemDesconto').value;
+
+        alert('Produto: ' + nomeProduto + '\n' +
+              'Código: ' + codigoProduto + '\n' +
+              'Descrição: ' + descricaoProduto + '\n' +
+              'Preço de Entrega: R$ ' + precoEntrega + '\n' +
+              'Preço do Produto: R$ ' + precoProduto + '\n' +
+              'Desconto: ' + porcentagemDesconto + '%');
+      });
+
+    </script>
 </body>
 
 </html>
