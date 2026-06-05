@@ -17,4 +17,16 @@ class loja extends Controller
         return view('index');
     }
 
+     public function amazon(){
+        return view('amazon');
+    }
+
+    public function login(){
+        return view('login');
+    }
+
+    public function sign(){
+        return view('sign');
+    }
+
 }
