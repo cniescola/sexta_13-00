@@ -68,6 +68,11 @@
                   <input type="text" class="form-control" id="porcentageDesc">
                 </div>
 
+                <div class="row">
+                  <label class="from-label">Menssagem Do Cliente</label>
+                  <input type="text" class="form-control" id="menssageCliente">
+                </div>
+
 
               </div>
             </div>
@@ -92,29 +97,53 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
 
+  <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+    crossorigin="anonymous"></script>
 
   <script type="text/javascript">
 
-    document.querySelector('#salvarbtn').addEventListener('click', function () {
-      var nomeProd = document.querySelector('#nomeProd').value;
-      var codigoProd = document.querySelector('#codigoProd').value;
-      var descriProd = document.querySelector('#descriProd').value;
-      var precoEntrega = document.querySelector('#precoEntrega').value;
-      var PrecoProd = document.querySelector('#PrecoProd').value;
-      var porcentageDesc = document.querySelector('#porcentageDesc').value;
+    $('#salvarbtn').click(function () {
+      var nomeProd = $('#nomeProd').val();
+      var codigoProd = $('#codigoProd').val();
+      var descriProd = $('#descriProd').val();
+      var precoEntrega = $('#precoEntrega').val();
+      var PrecoProd = $('#PrecoProd').val();
+      var porcentageDesc = $('#porcentageDesc').val();
+      var menssageCliente = $('#menssageCliente').val();
 
       alert('Produto: ' + nomeProd + '\n' +
         'Código: ' + codigoProd + '\n' +
         'Descrição Produto: ' + descriProd + '\n' +
         'Preço Entrega: R$ ' + precoEntrega + '\n' +
         'Preço Produto: R$ ' + PrecoProd + '\n' +
-        'Porcentagem Desconto: ' + porcentageDesc + '%');
-
-
-
-
+        'Porcentagem Desconto: % ' + porcentageDesc + '\n' +
+        'Menssagem do Cliente: ' + menssageCliente + '');
 
     });
+
+
+    // document.querySelector('#salvarbtn').addEventListener('click', function () {
+    //   var nomeProd = document.querySelector('#nomeProd').value;
+    //   var codigoProd = document.querySelector('#codigoProd').value;
+    //   var descriProd = document.querySelector('#descriProd').value;
+    //   var precoEntrega = document.querySelector('#precoEntrega').value;
+    //   var PrecoProd = document.querySelector('#PrecoProd').value;
+    //   var porcentageDesc = document.querySelector('#porcentageDesc').value;
+    //   var menssageCliente = document.querySelector('#menssageCliente').value;
+
+    //   alert('Produto: ' + nomeProd + '\n' +
+    //     'Código: ' + codigoProd + '\n' +
+    //     'Descrição Produto: ' + descriProd + '\n' +
+    //     'Preço Entrega: R$ ' + precoEntrega + '\n' +
+    //     'Preço Produto: R$ ' + PrecoProd + '\n' +
+    //     'Porcentagem Desconto: % ' + porcentageDesc + '\n' +
+    //     'Menssagem do Cliente: ' + menssageCliente + '');
+
+
+
+
+
+    // });
 
   </script>
 </body>
