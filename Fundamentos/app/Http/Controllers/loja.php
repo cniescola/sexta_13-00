@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 class loja extends Controller
 {
 
+    public function home(){
+        return view('home');
+    }
+
     public function index(){
         return view('lojavirtual');
     }
@@ -27,6 +31,10 @@ class loja extends Controller
 
     public function sign(){
         return view('sign');
+    }
+
+    public function estoque(){
+        return view('estoque');
     }
 
 }
