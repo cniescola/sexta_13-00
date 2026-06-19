@@ -7,13 +7,7 @@
         .sombra{
 
             box-shadow: 0 -2px 0px rgba(37, 37, 37, 0.2),
-                        0 2px 0px rgba(37, 37, 37, 0.2); 
-
-        }
-
-        .list-group-item[aria-expanded="true"] {
-            background-color: white;
-            border-bottom: none;
+                        0 2px 0px rgba(37, 37, 37, 0.2);
         }
 
         .tt[aria-expanded="true"] {
@@ -71,9 +65,9 @@
                     <a class="list-group-item tt list-group-item-action d-flex align-items-center justify-content-center" data-bs-toggle="collapse" href="#perfil">
                         <span style="color:white;"><i class="bi bi-person-fill fs-6" style="color:white;"></i>Perfil</span><i class="bi bi-chevron-right gira m-4"  style="color:white;"></i>
                     </a>
-                    <div class="collapse" id="perfil">
-                        <a class="list-group-item ps-4 border-0 sel" href="#" style="color:white;">Login</a>
-                        <a class="list-group-item ps-4 border-0 sel" href="#" style="color:white;">Logout</a>
+                    <div class="collapse position-absolute" id="perfil">
+                        <a class="list-group-item  border-0 sel " href="#" style="color:white; background-color: rgb(74, 81, 88); border-radius:5px;">Login</a>
+                        <a class="list-group-item  border-0 sel " href="#" style="color:white; background-color: rgb(74, 81, 88); border-radius:5px; width:100px; ">Logout</a>
                     </div>
                 </div>
 
@@ -106,9 +100,9 @@
                         </a>
 
                         <div class="collapse" id="cadastros">
-                            <a class="list-group-item ps-4 border-0 seleção" href="#">Cadastros Realizados</a>
-                            <a class="list-group-item ps-4 border-0 seleção" href="#">Cadastros Pendentes</a>
-                            <a class="list-group-item ps-4 border-0 seleção" href="#">Lista de Cadastros</a>
+                            <a class="list-group-item ps-4 border-0 seleção" href="#"><i class="bi bi-check-lg m-2"></i>Cadastros Realizados</a>
+                            <a class="list-group-item ps-4 border-0 seleção" href="#"><i class="bi bi-hourglass m-2"></i>Cadastros Pendentes</a>
+                            <a class="list-group-item ps-4 border-0 seleção" href="#"><i class="bi bi-list m-2"></i>Lista de Cadastros</a>
                         </div>
 
                         
@@ -121,10 +115,10 @@
                         </a>
 
                         <div class="collapse" id="produtos">
-                            <a class="list-group-item ps-4 border-0 seleção" href="#">Gerenciar produtos</a>
-                            <a class="list-group-item ps-4 border-0 seleção" href="#">Valores de venda</a>
-                            <a class="list-group-item ps-4 border-0 seleção" href="#">Etiquetas</a>
-                            <a class="list-group-item ps-4 border-0 seleção" href="#">Cadastros auxiliares</a>
+                            <a class="list-group-item ps-4 border-0 seleção" href="#"><i class="bi bi-box-seam m-2"></i>Gerenciar produtos</a>
+                            <a class="list-group-item ps-4 border-0 seleção" href="#"><i class="bi bi-currency-dollar m-2"></i>Valores de venda</a>
+                            <a class="list-group-item ps-4 border-0 seleção" href="#"><i class="bi bi-clipboard m-2"></i>Etiquetas</a>
+                            <a class="list-group-item ps-4 border-0 seleção" href="#"><i class="bi bi-boxes m-2"></i>Cadastros auxiliares</a>
                         </div>
 
 
@@ -143,7 +137,7 @@
 
 
 
-                         <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" 
+                        <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" 
                             data-bs-toggle="collapse"
                             href="#orçamento">
                             <span><i class="bi bi-file-post"></i> Orçamento</span>

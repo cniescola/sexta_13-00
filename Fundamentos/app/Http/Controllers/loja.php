@@ -37,4 +37,7 @@ class loja extends Controller
         return view('estoque');
     }
 
+    public function tail(){
+        return view('tail');
+    }
 }

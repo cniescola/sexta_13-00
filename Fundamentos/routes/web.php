@@ -21,6 +21,8 @@ Route::get('/sign',[loja::class,'sign'])->name('sign');
 
 Route::get('/',[loja::class,'estoque'])->name('estoque');
 
+Route::get('/tail',[loja::class,'tail'])->name('tail');
+
 
 //Route::get('/welcome', function () {
    // return view('welcome');
