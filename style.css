@@ -1,3 +1,12 @@
+<<<<<<< HEAD
 .card{
     box-shadow: 3px 5px 16px #00000038;
+=======
+.bg-gym-dark{
+    background-color: #0f0f0f;
+}
+
+.bg-gym-sidebar{
+    background-color: #1a1a1a;
+>>>>>>> d2b618f (inicio projeto)
 }
