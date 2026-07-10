@@ -40,4 +40,10 @@ class loja extends Controller
      public function sec1(){
         return view('index.sec1');
     }
+
+    public function tt(){
+        return view('telalogintail');
+    }
+
+
 }
