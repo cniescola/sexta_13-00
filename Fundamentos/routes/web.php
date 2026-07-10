@@ -19,9 +19,11 @@ Route::get('/login',[loja::class,'login'])->name('login');
 
 Route::get('/sign',[loja::class,'sign'])->name('sign');
 
-Route::get('/',[loja::class,'estoque'])->name('estoque');
+Route::get('/estoque',[loja::class,'estoque'])->name('estoque');
 
 Route::get('/tail',[loja::class,'tail'])->name('tail');
+
+Route::get('/',[loja::class,'sec1'])->name('sec1');
 
 
 //Route::get('/welcome', function () {
