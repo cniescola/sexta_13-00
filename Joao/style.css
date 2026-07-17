@@ -2,6 +2,11 @@
     background-color: #0f0f0f;
 }
 
+img {
+    width: 100px;
+    height: 100px;
+}
+
 .bg-gym-sidebar{
     background-color: #1a1a1a;
 }
